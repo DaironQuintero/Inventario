@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Protest+Revolution&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --primary-color: #3498db;
     --secondary-color: #2ecc71;
@@ -15,7 +17,8 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Protest Revolution", sans-serif;
+    font-size: 20px;
     background-color: var(--background-color);
     color: var(--text-color);
 }
