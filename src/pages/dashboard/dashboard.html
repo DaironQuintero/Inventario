@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/src/assets/verduras.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles.dashboard.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!--! CDN de la libreria chart.js-->
+
+    <title>Dashboard de Inventario</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!--todo: Barra de navegación-->
+        <aside class="sidebar">
+            <h1>Inventory</h1>
+            <nav>
+                <a href="dashboard.html" class="active"><i class="icon-dashboard"></i>Dashboard</a>
+                <a href="/src/pages/inventario/inventario.html"><i class="icon-inventory"></i>Ver Inventario</a>
+                <a href="/src/pages/agregarItem/agregarItem.html"><i class="icon-add"></i>Añadir Items</a>
+                <a href="/src/pages/ayuda/ayuda.html"><i class="icon-help"></i>Ayuda</a>
+                <a href="/src/pages/configuracion/configuracion.html"><i class="icon-settings"></i>Configuración</a>
+            </nav>
+        </aside>
+
+        <!--todo: Busqueda y usuario-->
+        <main class="main-content">
+            <header>
+                <div class="search-bar">
+                    <input type="search" placeholder="Buscar...">
+                </div>
+                <div class="header-actions">
+                    <div class="avatar">U</div>
+                </div>
+            </header>
+
+            <!--todo: Contenido de Dashboard-->
+            <div class="dashboard-content">
+                <div class="metrics">
+                    <div class="metric-card fruits">
+                        <h3>Frutas</h3>
+                        <p class="metric-value">194</p>
+                    </div>
+                    <div class="metric-card vegetables">
+                        <h3>Verduras</h3>
+                        <p class="metric-value">100</p>
+                    </div>
+                    <div class="metric-card income">
+                        <h3>Ingresos</h3>
+                        <p class="metric-value">$550,000</p>
+                    </div>
+                </div>
+
+                <!--todo: Contenedor de graficos-->
+                <div class="charts">
+                    <div class="chart-container">
+                        <canvas id="incomeChart"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="inventoryChart"></canvas>
+                    </div>
+                </div>
+
+                <!--todo: Contenedor de graficos-->
+                <div class="tables">
+
+                    <!--todo: Tabla I-->
+                    <div class="table-container">
+                        <h2>Ingresos Recientes</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Categoría</th>
+                                    <th>Cantidad</th>
+                                    <th>Precio Unidad</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Manzana</td>
+                                    <td>Fruta</td>
+                                    <td>20</td>
+                                    <td>1500</td>
+                                </tr>
+                                <tr>
+                                    <td>Plátano</td>
+                                    <td>Fruta</td>
+                                    <td>30</td>
+                                    <td>1200</td>
+                                </tr>
+                                <tr>
+                                    <td>Zanahoria</td>
+                                    <td>Verdura</td>
+                                    <td>50</td>
+                                    <td>800</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!--todo: Tabla II-->
+                    <div class="table-container">
+                        <h2>Total de Items</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Categoría</th>
+                                    <th>Cantidad</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Zanahoria</td>
+                                    <td>Verduras</td>
+                                    <td>24 kg</td>
+                                </tr>
+                                <tr>
+                                    <td>Manzana</td>
+                                    <td>Frutas</td>
+                                    <td>50 kg</td>
+                                </tr>
+                                <tr>
+                                    <td>Lechuga</td>
+                                    <td>Verduras</td>
+                                    <td>15 kg</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="graficoUno.js"></script>
+    <script src="graficoDos.js"></script>
+</body>
+
+</html>
