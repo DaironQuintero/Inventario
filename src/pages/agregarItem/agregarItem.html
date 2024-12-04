@@ -27,11 +27,73 @@
         </aside>
 
         <main class="main-content">
-
+            <div class="add-items">
+                <button id="openModalBtn" class="add-items-button">Agregar Items</button>
+            </div>
+            <div class="table-container">
+                <h2>Inventario De Productos</h2>
+                <h3>En esta sección puede agregar nuevos productos para guardarlos en el inventario</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Categoría</th>
+                            <th>Cantidad</th>
+                            <th>Precio Unidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Manzana</td>
+                            <td>Fruta</td>
+                            <td>20</td>
+                            <td>1500
+                                <button class="buttons" onclick=botones()><img src="/src/assets/trash-2.png" alt="icon trash"></button>
+                                <button class="buttons" onclick=botones()><img src="/src/assets/square-pen.png" alt="icon update"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Plátano</td>
+                            <td>Fruta</td>
+                            <td>30</td>
+                            <td>1200 
+                                <button class="buttons" onclick=botones()><img src="/src/assets/trash-2.png" alt="icon trash"></button>
+                                <button class="buttons" onclick=botones()><img src="/src/assets/square-pen.png" alt="icon update"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Zanahoria</td>
+                            <td>Verdura</td>
+                            <td>50</td>
+                            <td>800 
+                                <button class="buttons" onclick=botones()><img src="/src/assets/trash-2.png" alt="icon trash"></button>
+                                <button class="buttons" onclick=botones()><img src="/src/assets/square-pen.png" alt="icon update"></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--Todo: formulario -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn" id="closeModalBtn">&times;</span>
+                    <h2>Ingrese Los Datos Del Producto</h2>
+                    <form id="form" >
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required><br><br>
+                        <label for="caregoria">Categoria:</label>
+                        <input type="text" id="categoria" name="categoria" required><br><br>
+                        <label for="cantidad">Cantidad</label>
+                        <input type="text" id="cantidad" name="cantidad" required><br><br>
+                        <label for="precio-unidad">Precio Unidad</label>
+                        <input type="text" id="precio-unidad" name="precio-unidad" required><br><br>
+                        <button type="submit" class="btn-guardar">Guardar</button>
+                    </form>
+                </div>
+            </div>
         </main>
-
     </div>
-
+    <script src="agregar.js"></script>
 </body>
 
 </html>
