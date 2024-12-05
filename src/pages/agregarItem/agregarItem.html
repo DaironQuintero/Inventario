@@ -8,6 +8,9 @@
     <link rel="icon" href="/src/assets/verduras.png" type="image/x-icon">
 
     <link rel="stylesheet" href="styles.agregarItem.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!--! CDN de Axios-->
+
     <title>Agregar Item</title>
 </head>
 
@@ -43,31 +46,76 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr>    
                             <td>Manzana</td>
                             <td>Fruta</td>
-                            <td>20</td>
-                            <td>1500
-                                <button class="buttons" onclick=botones()><img src="/src/assets/trash-2.png" alt="icon trash"></button>
-                                <button class="buttons" onclick=botones()><img src="/src/assets/square-pen.png" alt="icon update"></button>
+                            <td>20 kg</td>
+                            <td>2000
+                                <button class="buttons edit-button" data-index="0"><img src="/src/assets/square-pen.png" alt="iconUpdate"></button>
                             </td>
                         </tr>
                         <tr>
                             <td>Plátano</td>
                             <td>Fruta</td>
-                            <td>30</td>
-                            <td>1200 
-                                <button class="buttons" onclick=botones()><img src="/src/assets/trash-2.png" alt="icon trash"></button>
-                                <button class="buttons" onclick=botones()><img src="/src/assets/square-pen.png" alt="icon update"></button>
+                            <td>30 kg</td>
+                            <td>1500
+                                <button class="buttons edit-button" data-index="1"><img src="/src/assets/square-pen.png" alt="iconUpdate"></button>
                             </td>
                         </tr>
                         <tr>
-                            <td>Zanahoria</td>
+                            <td>Zanohoria</td>
                             <td>Verdura</td>
-                            <td>50</td>
-                            <td>800 
-                                <button class="buttons" onclick=botones()><img src="/src/assets/trash-2.png" alt="icon trash"></button>
-                                <button class="buttons" onclick=botones()><img src="/src/assets/square-pen.png" alt="icon update"></button>
+                            <td>40 kg</td>
+                            <td>1000
+                                <button class="buttons edit-button" data-index="2"><img src="/src/assets/square-pen.png" alt="iconUpdate"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tomate</td>
+                            <td>Verdura</td>
+                            <td>25 kg</td>
+                            <td>1500
+                                <button class="buttons edit-button" data-index="3"><img src="/src/assets/square-pen.png" alt="iconUpdate"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Lechuga</td>
+                            <td>Verdura</td>
+                            <td>10 Unidad</td>
+                            <td>2000
+                                <button class="buttons edit-button" data-index="4"><img src="/src/assets/square-pen.png" alt="iconUpdate"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Fresa</td>
+                            <td>Fruta</td>
+                            <td>2 kg</td>
+                            <td>3500
+                                <button class="buttons edit-button" data-index="5"><img src="/src/assets/square-pen.png" alt="iconUpdate"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pepino</td>
+                            <td>Verdura</td>
+                            <td>8 kg</td>
+                            <td>1500
+                                <button class="buttons edit-button" data-index="6"><img src="/src/assets/square-pen.png" alt="iconUpdate"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Aguacate</td>
+                            <td>Fruta</td>
+                            <td>25 Unidad</td>
+                            <td>4500
+                                <button class="buttons edit-button" data-index="7"><img src="/src/assets/square-pen.png" alt="iconUpdate"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pitaya</td>
+                            <td>Fruta</td>
+                            <td> 2 kg</td>
+                            <td> 300
+                                <button class="buttons edit-button" data-index="8"><img src="/src/assets/square-pen.png" alt="iconUpdate"></button>
                             </td>
                         </tr>
                     </tbody>
@@ -80,20 +128,25 @@
                     <h2>Ingrese Los Datos Del Producto</h2>
                     <form id="form" >
                         <label for="name">Nombre:</label>
-                        <input type="text" id="name" name="name" required><br><br>
+                        <input type="text" id="nameInput" name="name" required onchange="createProduct()"><br><br>
+
                         <label for="caregoria">Categoria:</label>
-                        <input type="text" id="categoria" name="categoria" required><br><br>
-                        <label for="cantidad">Cantidad</label>
-                        <input type="text" id="cantidad" name="cantidad" required><br><br>
-                        <label for="precio-unidad">Precio Unidad</label>
-                        <input type="text" id="precio-unidad" name="precio-unidad" required><br><br>
-                        <button type="submit" class="btn-guardar">Guardar</button>
+                        <input type="text" id="categoriaInput" name="categoria" required onchange="createProduct()"><br><br>
+
+                        <label for="unidad">cant/Uni</label>
+                        <input type="text" id="unidadInput" name="unidad" required onchange="createProduct()"><br><br>
+
+                        <label for="precio">Precio Unidad</label>
+                        <input type="text" id="precioInput" name="precio" required onchange="createProduct()"><br><br>
+
+                        <button type="submit" class="btn-guardar" onclick="postData()">Guardar</button>
                     </form>
                 </div>
             </div>
         </main>
     </div>
     <script src="agregar.js"></script>
+    <script src="../utils/ejemplo.js"></script>
 </body>
 
 </html>

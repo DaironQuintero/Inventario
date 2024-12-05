@@ -30,6 +30,9 @@ p{
     font-size: 20px;
     align-items: center;
 }
+img{
+    margin-right: 10px;
+}
 
 .container {
     display: flex;
@@ -83,4 +86,30 @@ p{
     margin: 30px 10px 30px 10px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-bar {
+        margin-bottom: 10px;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
 }

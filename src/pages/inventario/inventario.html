@@ -7,6 +7,9 @@
     <link rel="icon" href="/src/assets/verduras.png" type="image/x-icon">
 
     <link rel="stylesheet" href="styles.inventario.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!--! CDN de Axios-->
+
     <title>Inventario</title>
 </head>
 <body>
@@ -25,12 +28,12 @@
     </aside>
 
     <main class="main-content">
-        <button class="btn">Ver inventario completo</button>
         <div class="table-container">
-            <h2>VER INVENTARIO</h2>
+            <h2>VER INVENTARIO <button  class="btn" onclick="iterarValores()">Ver inventario completo</button></h2>
             <table>
                 <thead>
                     <tr>
+                        <th>Id</th>
                         <th>Nombre</th>
                         <th>Categoría</th>
                         <th>Cantidad</th>
@@ -39,22 +42,67 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Manzana</td>
-                        <td>Fruta</td>
-                        <td>20</td>
-                        <td>1500</td>
+                        <td id="id0"></td>
+                        <td id="name0"></td>
+                        <td id="categoria0"></td>
+                        <td id="unidad0"></td>
+                        <td id="precio0"></td>
                     </tr>
                     <tr>
-                        <td>Plátano</td>
-                        <td>Fruta</td>
-                        <td>30</td>
-                        <td>1200</td>
+                        <td id="id1"></td>
+                        <td id="name1"></td>
+                        <td id="categoria1"></td>
+                        <td id="unidad1"></td>
+                        <td id="precio1"></td>
                     </tr>
                     <tr>
-                        <td>Zanahoria</td>
-                        <td>Verdura</td>
-                        <td>50</td>
-                        <td>800</td>
+                        <td id="id2"></td>
+                        <td id="name2"></td>
+                        <td id="categoria2"></td>
+                        <td id="unidad2"></td>
+                        <td id="precio2"></td>
+                    </tr>
+                    <tr>
+                        <td id="id3"></td>
+                        <td id="name3"></td>
+                        <td id="categoria3"></td>
+                        <td id="unidad3"></td>
+                        <td id="precio3"></td>
+                    </tr>
+                    <tr>
+                        <td id="id4"></td>
+                        <td id="name4"></td>
+                        <td id="categoria4"></td>
+                        <td id="unidad4"></td>
+                        <td id="precio4"></td>
+                    </tr>
+                    <tr>
+                        <td id="id5"></td>
+                        <td id="name5"></td>
+                        <td id="categoria5"></td>
+                        <td id="unidad5"></td>
+                        <td id="precio5"></td>
+                    </tr>
+                    <tr>
+                        <td id="id6"></td>
+                        <td id="name6"></td>
+                        <td id="categoria6"></td>
+                        <td id="unidad6"></td>
+                        <td id="precio6"></td>
+                    </tr>
+                    <tr>
+                        <td id="id7"></td>
+                        <td id="name7"></td>
+                        <td id="categoria7"></td>
+                        <td id="unidad7"></td>
+                        <td id="precio7"></td>
+                    </tr>
+                    <tr>
+                        <td id="id8"></td>
+                        <td id="name8"></td>
+                        <td id="categoria8"></td>
+                        <td id="unidad8"></td>
+                        <td id="precio8"></td>
                     </tr>
                 </tbody>
             </table>
@@ -63,6 +111,6 @@
     </main>
 
 </div>
-
+<script src="../utils/ejemplo.js"></script>
 </body>
 </html>

@@ -14,10 +14,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Protest Revolution", sans-serif;
 }
 
 body {
-    font-family: "Protest Revolution", sans-serif;
     font-size: 20px;
     background-color: var(--background-color);
     color: var(--text-color);
@@ -75,9 +75,10 @@ body {
 
 .table-container {
     background-color: var(--card-color);
-    padding: 20px;
+    padding: 50px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 50px;
 }
 
 .table-container h2 {
@@ -136,11 +137,8 @@ th {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 1s;
-    float: right;
-    margin-top: 20px;
     color: white;
-    background-color: var(--primary-color);
-    font-family: "Protest Revolution", sans-serif;
+    background-color: var(--sidebar-color);
 }
 .btn:hover{
 
