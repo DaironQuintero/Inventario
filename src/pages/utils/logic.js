@@ -53,25 +53,25 @@ async function postData() {
     console.log(response.data)
 }
 
-//!PUT => Modificar datos
-async function modificarProductos(id) {
+// //!PUT => Modificar datos
+// async function modificarProductos(id) {
 
-    let product = {
-        nombre: "Manzana",
-        categoria: "Fruta",
-        precio: 2000,
-        unidad: "20 kg"
-    }
+//     let product = {
+//         nombre: "Manzana",
+//         categoria: "Fruta",
+//         precio: 2000,
+//         unidad: "20 kg"
+//     }
 
-    const response = await axios.put(`${url}/${id}`,product) 
-    console.log(response.data);
+//     const response = await axios.put(`${url}/${id}`,product) 
+//     console.log(response.data);
     
-}
-// modificarProductos(1)
-const elements = document.querySelectorAll('tr')
+// }
+// // modificarProductos(1)
+// const elements = document.querySelectorAll('tr')
 
-elements.forEach(element => {
-    element.addEventListener('clik', (event) =>{
-        alert('hiciste clik en el id: ', event.target.id)
-    })
-})
+// elements.forEach(element => {
+//     element.addEventListener('clik', (event) =>{
+//         alert('hiciste clik en el id: ', event.target.id)
+//     })
+// })
