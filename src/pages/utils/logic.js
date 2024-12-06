@@ -21,7 +21,7 @@ async function iterarValores(){
        categoria.innerHTML = response.data[i].categoria
        unidad.innerHTML = response.data[i].unidad
        precio.innerHTML = response.data[i].precio
-       
+        
     }
 };
 

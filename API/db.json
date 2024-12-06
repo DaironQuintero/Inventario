@@ -1,0 +1,116 @@
+{
+  "productos": [
+    {
+      "nombre": "Manzana",
+      "categoria": "Fruta",
+      "precio": 2000,
+      "unidad": "20 kg",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "nombre": "Plátano",
+      "categoria": "Fruta",
+      "precio": 1500,
+      "unidad": "30 kg"
+    },
+    {
+      "id": "3",
+      "nombre": "Zanahoria",
+      "categoria": "Verdura",
+      "precio": 1000,
+      "unidad": "40 kg"
+    },
+    {
+      "id": "4",
+      "nombre": "Tomate",
+      "categoria": "Verdura",
+      "precio": 1500,
+      "unidad": "25 kg"
+    },
+    {
+      "id": "5",
+      "nombre": "Lechuga",
+      "categoria": "Verdura",
+      "precio": 2000,
+      "unidad": "10 unidad"
+    },
+    {
+      "id": "6",
+      "nombre": "Fresa",
+      "categoria": "Fruta",
+      "precio": 3500,
+      "unidad": "2 kg"
+    },
+    {
+      "id": "7",
+      "nombre": "Pepino",
+      "categoria": "Verdura",
+      "precio": 1500,
+      "unidad": "8 kg"
+    },
+    {
+      "id": "8",
+      "nombre": "Aguacate",
+      "categoria": "Fruta",
+      "precio": 4500,
+      "unidad": "25 unidad"
+    },
+    {
+      "id": "755a",
+      "nombre": "Pitaya",
+      "categoria": "Fruta",
+      "precio": 3000,
+      "unidad": "15 kg"
+    },
+    {
+      "id": "98ea",
+      "nombre": "Frambuesa",
+      "categoria": "Fruta",
+      "precio": 2000,
+      "unidad": "2 kg"
+    },
+    {
+      "id": "3f29",
+      "nombre": "Mango",
+      "categoria": "Fruta",
+      "precio": "1600",
+      "unidad": "8 kg"
+    },
+    {
+      "id": "0316",
+      "nombre": "Espinaca",
+      "categoria": "Verdura",
+      "precio": "1500",
+      "unidad": "20"
+    },
+    {
+      "id": "d712",
+      "nombre": "Fruta Dragon",
+      "categoria": "Fruta",
+      "precio": "5000",
+      "unidad": "8 kg"
+    },
+    {
+      "id": "e8fd",
+      "nombre": "Manzana",
+      "categoria": "Fruta",
+      "precio": "2000",
+      "unidad": "30 kg"
+    },
+    {
+      "id": "d101",
+      "nombre": "Manzana",
+      "categoria": "Fruta",
+      "precio": "2000",
+      "unidad": "40 kg"
+    },
+    {
+      "id": "d54f",
+      "nombre": "Manzana",
+      "categoria": "Fruta",
+      "precio": "2000",
+      "unidad": "30 kg"
+    }
+  ]
+}
